@@ -1,0 +1,210 @@
+
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+
+    header {
+        background-image: url(https://imgs.search.brave.com/wHcHYjXNL-f3hOn_y-pGLh8UL1zQqEuCJ0wzg1qLeIk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9NdUlWMkpO/LmpwZw);
+
+        background-color: #000000;
+        color: #282727;
+        padding: 1em;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Kanit', sans-serif; /* Use Kanit font */
+        font-weight: bold; /* Make the text bold */
+        
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+        padding: 1em;
+        
+    }
+
+    nav a {
+        color: #fff;
+    }
+    
+
+    section {
+        background-image: url(https://imgs.search.brave.com/wHcHYjXNL-f3hOn_y-pGLh8UL1zQqEuCJ0wzg1qLeIk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9NdUlWMkpO/LmpwZw);
+        background-size: contain;
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product {
+        border: 1px solid #ddd;
+        background-size: contain;
+        border-radius: 10px;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+        flex: 0 1 calc(30% - 2em);
+        max-width: calc(30% - 2em);
+        box-sizing: border-box;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    .product h2 {
+        color: #333;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .product p {
+        color: #555;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+
+    .product button {
+        background-color: #080808;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .product button:hover {
+        background-color: #2980b9;
+    }
+
+    footer {
+        background-color: #080808;
+        color: #fdf8f8;
+        text-align: center;
+        padding: 0em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        .product {
+            flex: 0 1 calc(45% - 2em);
+            max-width: calc(45% - 2em);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .product {
+            flex: 0 1 calc(100% - 2em);
+            max-width: calc(100% - 2em);
+        }
+    }
+
+    /* Feedback Form Styles */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .feedback-form {
+        background-color: #fff;
+        background-image: url(https://imgs.search.brave.com/wHcHYjXNL-f3hOn_y-pGLh8UL1zQqEuCJ0wzg1qLeIk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9NdUlWMkpO/LmpwZw);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.5em;
+        color: #555;
+    }
+
+    .feedback-form h2 {
+        color: #01090f;
+    }
+
+    .feedback-form label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .feedback-form button {
+        background-color: #000304;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+    .feedback-form button:hover {
+        background-color: #2980b9;
+    }
+
+    .contact-form {
+        background-size: cover; /* Adjust background size to cover the entire form */
+        background-position: center; /* Center the background image */
+        /* Other contact form styles */
+    }
+    
+    .contact-form h2 {
+        color: #fff; /* Change text color for better visibility */
+    }
+    
+    .contact-info {
+        color: #fff; /* Change text color for better visibility */
+    }
+    
+
+
+
+
+
+
